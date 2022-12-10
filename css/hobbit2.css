@@ -1,0 +1,292 @@
+*  {font-family: poor richard;
+    margin: 0;
+    padding: 0;
+    background-color: black;}
+
+    
+    /* 
+    font-family: poor richard;
+    font-family: harrington;
+    font-family: cambria;
+    font-family: tempus sans itc;
+    font-family: papyrus;
+    font-family: perpetua titling mt;
+     */
+    
+     /* top content */
+    
+video 
+{position: relative;
+width: 1200px;
+height: 600px;
+left: 0px;}
+    
+.info 
+{width: 1200px; 
+height: auto; 
+word-spacing: 5px; padding: 10px;
+box-shadow: 1px 1px 25px 1px rgb(160, 120, 10);}
+    
+.nextBtnn 
+{position: absolute; 
+opacity: 0.2; 
+color: white;
+margin: -340px 582px;
+font-size: 20px;
+z-index: 1;
+border: none;} 
+    
+.nextBtnn:hover 
+{opacity: 0.6; cursor: pointer;}
+    
+.poster 
+{width: 500px;
+height: 730px;
+float: left;
+border: 5px solid black; }
+    
+.genres 
+{text-align: left;
+ position: relative;}
+    
+        /* rating buttons */
+    
+        /* imdb button */
+        
+.imdb 
+{color:white;
+font-size: 15px;
+width: 100px; height: 50px;
+margin: 8px; text-align: justify;
+border-radius: 10px;}
+.imdb:hover
+{cursor: pointer;
+background-color: rgb(41, 40, 40);}
+    
+.imdb > i 
+{margin: 5px;
+color: rgba(255, 217, 0, 0.842);
+font-size: 25px;
+float: left;
+background-color: transparent;}
+    
+    /* rotten tomatoes  button */
+    
+.rottenT 
+{color: white; 
+font-size: 30px;
+width: 120px; height: 50px;
+position: absolute;
+margin: 10px 18px; 
+border-radius: 10px;}
+    
+.rottenT:hover 
+{background-color: rgb(41, 40, 40);
+cursor: pointer;}  
+.rottenT > img {width: 40px; height: 35px; float: left; background-color: transparent;}
+    
+    /* audience score button */
+    
+.audience 
+{color: white;
+font-size: 30px;
+width: 110px; height: 50px;
+position: absolute;
+margin: 11px 160px;
+border-radius: 10px;}
+.audience:hover {background-color: rgb(41, 40, 40);
+cursor: pointer;}
+.audience > img 
+{width: 25px; height: 26px; background-color: transparent;}
+    
+    
+    /* text styles
+    colors,  font sizes */
+    
+h1 
+{color: white;
+text-transform: capitalize;
+text-align: left;}
+    
+h3 
+{color: white;
+display: inline-block;
+border: 2px solid grey;
+border-radius: 20px; width: 110px;
+text-align: center;}
+    
+h5 
+{color: white;
+text-align: left;
+font-size: 20px;}
+    
+h4 
+{text-align: left;
+color: white;
+text-transform: capitalize;
+font: bolder 14px anironc; width: 170px;
+padding: 70px 10px;}
+    
+h4 > a
+{color: goldenrod;
+font: bolder 23px poor richard;
+text-decoration: none;
+background-color: transparent;}
+h4 > a:hover 
+{text-decoration: underline;
+color: white;}
+    
+    
+    
+p 
+{color: white;
+text-align: justify;
+text-indent: 35px;
+font-size: 20px;}  
+    
+    /* cast section */
+    
+.header 
+{border-left: 4px solid goldenrod;
+border-right: 4px solid goldenrod;
+text-align: center;
+width: 200px;}
+    
+span
+{color: goldenrod;
+text-transform: capitalize;}
+span:hover
+{text-decoration: underline;
+cursor: pointer;}
+    
+h2 
+{color: white;
+text-align: left;
+border-bottom: 2px solid grey;
+width: 1150px; padding: 10px;
+text-transform: capitalize;}
+h2 > a {text-decoration: none;}
+     
+.flex-container 
+{display: flex;
+flex-wrap: wrap;
+padding: 10px;
+ margin: 10px;}
+    
+.flex-container > div 
+{width: 150px; 
+height: 110px;
+padding: 10px;
+margin: 10px;
+color: white;
+border-radius: 30px;
+box-shadow: 1px 1px 13px 1px goldenrod;}
+    
+.flex-container > div:hover
+{cursor: pointer;
+box-shadow: 1px 1px 15px 2px antiquewhite;}
+    
+    .a {background-image: url('../mediaFiles/freeman.jpg'); background-size: cover;}
+    .b {background-image: url('../mediaFiles/ian.webp'); background-size: cover;}
+    .c {background-image: url('../mediaFiles/orlando.jpg'); background-size: cover;}
+    .d {background-image: url('../mediaFiles/leepace.webp'); background-size: cover;}
+    .e {background-image: url('../mediaFiles/richard.jpg'); background-size: cover;}
+    .f {background-image: url('../mediaFiles/lee.jpg'); background-size: cover;}
+    .g {background-image: url('../mediaFiles/serkis.webp'); background-size: cover;}
+    .h {background-image: url('../mediaFiles/stott.webp'); background-size: cover;}
+    .i {background-image: url('../mediaFiles/graham.jpg'); background-size: cover;}
+    .j {background-image: url('../mediaFiles/william.jpg'); background-size: cover;}
+    .k {background-image: url('../mediaFiles/nesbit.webp'); background-size: cover;}
+    .l {background-image: url('../mediaFiles/hunter.jpg'); background-size: cover;}
+    .m {background-image: url('../mediaFiles/dean.webp'); background-size: cover;}
+    .n {background-image: url('../mediaFiles/lilly.webp'); background-size: cover;}
+    .o {background-image: url('../mediaFiles/aidan.webp'); background-size: cover;}
+    .p {background-image: url('../mediaFiles/callen.jpg'); background-size: cover;}
+    .q {background-image: url('../mediaFiles/hambleton.jpg'); background-size: cover;}
+    .y {background-image: url('../mediaFiles/jed.jpeg'); background-size: cover;}
+    .z {background-image: url('../mediaFiles/hadlow.jpg'); background-size: cover;}
+    .zz {background-image: url('../mediaFiles/adam.jpg'); background-size: cover;}
+    .xx {background-image: url('../mediaFiles/manu.jpg'); background-size: cover;}
+    .xxx {background-image: url('../mediaFiles/evans.avif'); background-size: cover;}
+    .xxxx {background-image: url('../mediaFiles/mccoy.jpg'); background-size: cover;}
+    
+    
+
+/* gallery pictures */
+
+.gallery 
+{width: 1200px;
+height: 650px;
+position: relative;}
+    
+.gallery > button 
+{color: rgb(204, 199, 199);
+background-color: transparent;
+position: absolute;
+font-size: 25px;
+border: none;}
+
+.gallery > button > i 
+{background-color: transparent;}
+.gallery > button:hover 
+{cursor: pointer;
+color: white;}
+
+.galleryBtn 
+{margin: 270px -25px}
+.prevBtn
+{margin: 270px 0;}
+    
+.gallery > img 
+{width: 100%;
+height: 100%;
+border-radius: 10px;}
+
+/* footer content */ 
+    
+.sociall
+{width: 1200px;
+height: 100px;}
+    
+ul {list-style-type: none;}
+    
+ul > li 
+{display: inline-block;
+font-size: 30px;
+left: 100px;
+margin: 10px;}
+    
+ul > li > a 
+{color: rgb(214, 208, 208); 
+text-decoration: none;
+margin: 10px;}
+    
+ul > li > a:hover 
+{cursor: pointer;
+color: rgb(255, 255, 255);}
+    
+.lists > li 
+{color: white;
+font: bold 20px poor richard;
+text-transform: capitalize; margin: 10px;}
+    
+.lists > li:hover 
+{cursor: pointer;
+text-decoration: underline;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 1920px) {
+        video {margin: 0 0px;}
+        button {margin: -300px 1197px;}
+    }

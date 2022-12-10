@@ -1,0 +1,288 @@
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: felix titling;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* fonts and texts */
+.elf {
+  font: bold 20px elvish ring nfi;
+}
+
+.men {
+  font: bold 18px anironc;
+}
+
+.dwarf {
+  font: bold 25px angerthas moria;
+}
+
+.hobbit {
+  font: bold 27px bilbo-hand;
+}
+
+.dark {
+  font: bold 30px tengwar;
+}
+
+/* main screen */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15%;
+  height: 743px;
+  width: 1500px ;
+}
+
+.text-content {
+  background: rgba(0, 0, 0, 0.541);
+  box-shadow: 1px 1px 60px 20px rgba(0, 0, 0, 0.705);
+  border-radius: 50%;
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: 4%;
+  left: 45%;
+  z-index: 1;
+  /* animation: anim 80s linear infinite; */
+}
+
+/* @keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+.text span {
+  animation: fire 30s linear infinite;
+  background: url("../MediaFiles/burning1.jpg");
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  font: 7em tengwar;
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 320px;
+  -webkit-background-clip: text;
+}
+
+@keyframes fire {
+  0% {
+    background-position: left 0 top 25px;
+  }
+  50% {
+    background-position: top 130px top -35px;
+  }
+  100% {
+    background-position: left 250px top -60px;
+  }
+}
+
+.blurImg {
+  filter: blur(5px);
+  height: 100%;
+  width: 100%;
+}
+
+.buttons-cont {
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  animation: load 3s;
+  width: 1300px;
+}
+
+@keyframes load {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+.race-button {
+  border: 1px solid white;
+  box-shadow: 1px 1px 10px 2px rgb(184, 179, 179);
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font: bolder 30px felix titling;
+  height: 100px;
+  letter-spacing: 10px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  transition: 0.5s;
+  width: 300px;
+}
+
+.race-button:hover {
+  transform: translateX(30%);
+}
+
+.race-button::before {
+  background-color: rgb(204, 201, 197);
+  content: "";
+  position: absolute;
+  left: 250px;
+  height: 100%;
+  top: 0;
+  transform: skew(45deg) translateX(150px);
+  transition: 0.6s;
+  width: 50px;
+}
+.race-button:hover::before {
+  transform: skew(45deg) translateX(-780px);
+}
+
+/* races */
+.character-container {
+  background-image: url("../MediaFiles/elvenback.jpg");
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 650px;
+  margin: 10px auto;
+  width: 1500px;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin: -11%;
+  font: bolder 5rem felix titling;
+  letter-spacing: 50px;
+  -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(0, 0, 0, 0.39));
+}
+
+.inner-container {
+  background: transparent;
+  height: 500px;
+  transform: translateY(50px);
+}
+
+.person-name,
+.person-info {
+  background: transparent;
+  color: white;
+  margin: 20px;
+}
+
+.person-name {
+  font: bolder 3.5rem felix titling;
+  letter-spacing: 10px;
+}
+
+.person-info {
+  font: 1.5rem poor richard;
+  word-spacing: 3px;
+  text-align: justify;
+  width: 700px;
+}
+
+.img-container {
+  background: transparent;
+  height: 100%;
+  overflow: hidden;
+  width: 40%;
+  transform: translateX(80px);
+}
+
+.person-img {
+  height: auto;
+  width: 100%;
+}
+
+.btn-container {
+  background: transparent;
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  transform: translateX(-20%);
+  margin-top: 35%;
+}
+
+.dot {
+  border: 2px solid goldenrod;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  height: 15px;
+  margin: 10px;
+  transition: background-color 1s;
+  transition: border-radius 1s;
+  width: 15px;
+}
+
+.dot:hover {
+  background-color: goldenrod;
+  border-radius: 10%;
+}
+
+/* social section */
+.sociall {
+  margin: 5%;
+  height: 100px;
+  width: 1200px;
+}
+
+.sociall > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.sociall > ul > li {
+  display: inline-block;
+  font-size: 30px;
+  left: 100px;
+  margin: 10px;
+}
+
+.sociall > ul > li > a {
+  color: rgb(214, 208, 208);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.sociall > ul > li > a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.sociall > .lists > li {
+  color: white;
+  font: bold 20px poor richard;
+  text-transform: capitalize;
+  margin: 10px;
+}
+
+.lists > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

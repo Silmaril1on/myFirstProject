@@ -1,0 +1,258 @@
+* {
+  font-family: ringbearer;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.blur {
+  background-image: url("../MediaFiles/eye.webp");
+  background-position: right;
+  background-size: cover;
+  width: 1270px;
+  height: auto;
+}
+
+/* top content style */
+.content {
+  animation: move 80s infinite;
+  animation-delay: 10s;
+  border: 8px solid goldenrod;
+  background-image: url("../MediaFiles/banner1.jpg");
+  height: 550px;
+  margin: 10px;
+  width: 1230px;
+}
+
+@keyframes move {
+  33% {
+    background-image: url("../mediafiles/banner2.jpg");
+  }
+  66% {
+    background-image: url("../mediafiles/banner3.png");
+  }
+  100% {
+    background-image: url("../mediafiles/banner4.jpg");
+  }
+}
+
+.content > img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  background-image: url("../MediaFiles/lines.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: goldenrod;
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px;
+  width: 1100px;
+  margin-left: 6%;
+}
+
+.shops {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  width: 1260px;
+}
+
+#weta {
+  background-image: url("../mediaFiles/wetalogo.png");
+  background-position: center;
+  background-size: cover;
+  height: 70px;
+  width: 170px;
+}
+#unitedcutlery {
+  background-image: url("../mediaFiles/UC-logo.png");
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 170px;
+}
+#noble {
+  background-image: url("../mediaFiles/noble.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 170px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  height: 50px;
+  border-bottom: 2px solid goldenrod;
+  width: 900px;
+  margin: auto;
+}
+
+button {
+  border: 2px solid goldenrod;
+  background-color: black;
+  border-radius: 7px;
+  box-shadow: 0 0 5px 1px rgb(148, 145, 145);
+  color: white;
+  font: bolder 15px ringbearer;
+  justify-content: center;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding: 2px;
+  width: 120px;
+  height: 30px;
+  transition: height 0.5s;
+}
+button:hover {
+  cursor: pointer;
+  height: 35px;
+  color: goldenrod;
+}
+
+.section-center {
+  background: transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1250px;
+}
+
+/* product item styles */
+
+.menu-item {
+  background-color: rgb(18, 17, 17);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 3px rgb(82, 79, 77);
+  color: white;
+  margin: 20px;
+  width: 260px;
+}
+.menu-item:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 3px rgb(146, 144, 142);
+}
+
+.item-name {
+  background-image: url("../MediaFiles/textback.jpg");
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  filter: brightness(1.2);
+  font-size: 25px;
+  justify-content: center;
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  word-spacing: 5px;
+}
+
+.item-price {
+  border-bottom: 3px solid rgb(173, 127, 8);
+  color: white;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+}
+
+.item-text {
+  font-size: 12px;
+  justify-content: center;
+  text-align: justify;
+  padding: 15px;
+}
+
+.photo {
+  border-radius: 10px;
+  padding: 12px;
+  width: 230px;
+}
+
+/* purchase inpute */
+form {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.qty {
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: poor richards;
+  font-size: 15px;
+  text-indent: 5px;
+  width: 50px;
+}
+.qty:hover {
+  cursor: text;
+}
+
+input {
+  border: 1px solid goldenrod;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 25px;
+  margin: 3px;
+  width: 150px;
+}
+input:hover {
+  cursor: pointer;
+  color: goldenrod;
+}
+
+/* footer section */
+
+.sociall {
+  height: 100px;
+  width: 1200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  display: inline-block;
+  font-size: 30px;
+  left: 100px;
+  margin: 10px;
+}
+
+ul > li > a {
+  color: rgb(214, 208, 208);
+  text-decoration: none;
+  margin: 10px;
+}
+
+ul > li > a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.lists > li {
+  color: white;
+  font: bold 20px poor richard;
+  text-transform: capitalize;
+  margin: 10px;
+}
+
+.lists > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
