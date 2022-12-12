@@ -4,8 +4,6 @@
   font-family: ringbearer;
 }
 
-
-
 body {
   background-color: black;
   display: flex;
@@ -36,7 +34,7 @@ nav > ul > li {
 }
 
 ul > li > a {
-  background-image: url('../MediaFiles/textback.jpg');
+  background-image: url("../MediaFiles/textback.jpg");
   background-position: center;
   background-clip: text;
   color: transparent;
@@ -78,7 +76,7 @@ nav > ul > li > ul > li:hover {
 }
 
 nav > ul > li > ul > li > a {
-    background-image: url('../MediaFiles/textback.jpg');
+  background-image: url("../MediaFiles/textback.jpg");
   background-position: center;
   background-clip: text;
   color: transparent;
@@ -86,7 +84,6 @@ nav > ul > li > ul > li > a {
   text-decoration: none;
   word-spacing: 3px;
   -webkit-background-clip: text;
-
 }
 .first {
   background: linear-gradient(
@@ -94,7 +91,7 @@ nav > ul > li > ul > li > a {
       rgba(0, 0, 0, 0.466),
       rgba(0, 0, 0, 0.301)
     ),
-    url("/mediaFiles/first.jpg");
+    url("../mediaFiles/first.jpg");
   background-size: cover;
   background-position-x: left;
   background-position-y: -80px;
@@ -105,7 +102,7 @@ nav > ul > li > ul > li > a {
       rgba(0, 0, 0, 0.144),
       rgba(0, 0, 0, 0.075)
     ),
-    url("/mediaFiles/fellow.jpg");
+    url("../mediaFiles/fellow.jpg");
   background-size: cover;
   background-position-x: 30px;
   background-position-y: -35px;
@@ -113,7 +110,7 @@ nav > ul > li > ul > li > a {
 
 .third {
   background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
-    url("/mediaFiles/thirdd.jpg");
+    url("../mediaFiles/thirdd.jpg");
   background-size: cover;
   background-position-x: left;
   background-position-y: -15px;
@@ -124,7 +121,7 @@ nav > ul > li > ul > li > a {
       rgba(0, 0, 0, 0.466),
       rgba(0, 0, 0, 0.301)
     ),
-    url("/MediaFiles/hobitfirst.jpg");
+    url("../MediaFiles/hobitfirst.jpg");
   background-size: cover;
   background-position-x: left;
   background-position-y: -20px;
@@ -135,7 +132,7 @@ nav > ul > li > ul > li > a {
       rgba(0, 0, 0, 0.192),
       rgba(0, 0, 0, 0.24)
     ),
-    url("/MediaFiles/hobbit2.jpg");
+    url("../MediaFiles/hobbit2.jpg");
   background-size: cover;
   background-position-x: left;
   background-position-y: -20px;
@@ -146,7 +143,7 @@ nav > ul > li > ul > li > a {
       rgba(0, 0, 0, 0.466),
       rgba(0, 0, 0, 0.301)
     ),
-    url("/mediaFiles/hobbit2poster.jpg");
+    url("../mediaFiles/hobbit2poster.jpg");
   background-size: cover;
   background-position-x: left;
   background-position-y: -35px;
@@ -173,7 +170,7 @@ nav > ul > li:hover > ul {
   -webkit-background-clip: text;
 }
 #sidebarBtn:hover {
-  background-image: url('../MediaFiles/marbletext.webp');
+  background-image: url("../MediaFiles/marbletext.webp");
   background-clip: text;
   cursor: pointer;
   color: transparent;
@@ -456,7 +453,7 @@ span {
 
 /* slideshow */
 .slideshow {
-  background-image: url("/MediaFiles/slideshowbackgroundRing.png");
+  background-image: url("../MediaFiles/slideshowbackgroundRing.png");
   background-size: cover;
   background-position-x: 50px;
   display: flex;

@@ -2,11 +2,8 @@
 const sidebar = document.getElementById("sidebar");
 const burger = document.getElementById("burger");
 
-
 document.onclick = function (e) {
-  if (
-    e.target.id !== "burger"
-  ) {
+  if (e.target.id !== "burger") {
     sidebar.classList.remove("active");
   }
 };
@@ -21,7 +18,7 @@ const movies = [
     id: 0,
     title: "the lord of the rings: fellowship of the ring",
     info: "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed.",
-    img: "/mediaFiles/lotr1poster.jpg",
+    img: "./mediaFiles/lotr1poster.jpg",
     watch:
       "https://www.primevideo.com/detail/The-Lord-of-the-Rings-The-Fellowship-of-the-Ring/0TFTBBAYAUINPG47JWI8PZGHKB",
   },
@@ -29,7 +26,7 @@ const movies = [
     id: 1,
     title: "the lord of the rings: the two tower",
     info: "Frodo and Sam arrive in Mordor with the help of Gollum. A number of new allies join their former companions to defend Isengard as Saruman launches an assault from his domain.",
-    img: "/mediaFiles/lotr2poster.jpg",
+    img: "./mediaFiles/lotr2poster.jpg",
     watch:
       "https://www.primevideo.com/detail/Lord-of-the-Rings-The-Two-Towers/0QG0TWNJ93G9ABMWFZ5I24L997",
   },
@@ -37,7 +34,7 @@ const movies = [
     id: 2,
     title: "the lord of the rings: return of the king",
     info: "The former Fellowship members prepare for the final battle. While Frodo and Sam approach Mount Doom to destroy the One Ring, they follow Gollum, unaware of the path he is leading them to.",
-    img: "/mediaFiles/lotr3poster.jpg",
+    img: "./mediaFiles/lotr3poster.jpg",
     watch:
       "https://www.primevideo.com/detail/Lord-Of-The-Rings-The-Return-Of-The-King/0NSGBFYAQDZQKEC8BBWKT8GILJ",
   },
@@ -45,7 +42,7 @@ const movies = [
     id: 3,
     title: "the hobbit: an unexcpected journey",
     info: "Bilbo Baggins, a hobbit, is persuaded into accompanying a wizard and a group of dwarves on a journey to reclaim the city of Erebor and all its riches from the dragon Smaug.",
-    img: "/mediaFiles/hobbit1poster.jpg",
+    img: "./mediaFiles/hobbit1poster.jpg",
     watch:
       "https://www.primevideo.com/region/na/detail/The-Hobbit-An-Unexpected-Journey/0LCQAXV4R5PUUZUGFWHO7ZBTD3",
   },
@@ -53,7 +50,7 @@ const movies = [
     id: 4,
     title: "the hobbit: desolation of smaug",
     info: "Bilbo Baggins, a hobbit, and his companions face great dangers on their journey to Laketown. Soon, they reach the Lonely Mountain, where Bilbo comes face-to-face with the fearsome dragon Smaug.",
-    img: "/mediaFiles/hobbit2poster.jpg",
+    img: "./mediaFiles/hobbit2poster.jpg",
     watch:
       "https://www.primevideo.com/region/na/detail/The-Hobbit-The-Desolation-Of-Smaug/0QKBS9KVC00BVV35PHUAO115QJ",
   },
@@ -61,7 +58,7 @@ const movies = [
     id: 5,
     title: "the hobbit: battle of the five armies",
     info: "Bilbo fights against a number of enemies to save the life of his Dwarf friends and protects the Lonely Mountain after a conflict arises.",
-    img: "/mediaFiles/hobbit3poster.jpg",
+    img: "./mediaFiles/hobbit3poster.jpg",
     watch:
       "https://www.primevideo.com/region/na/detail/The-Hobbit-The-Battle-of-the-Five-Armies/0R5O39EMUMM29GN1290M2TC5QX",
   },
@@ -157,8 +154,6 @@ const characterPhoto = document.querySelector(".character-photo");
 const characterName = document.querySelector(".character-name");
 const characterInfo = document.querySelector(".character-info");
 const slideBtnContainer = document.querySelector(".character-toggle-container");
-
-
 
 const charSlideShow = characters.map(function (fellowship) {
   return `<button class="char-btn" onclick="slideShow(${fellowship.id})"></button>`;
